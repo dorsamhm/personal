@@ -1,0 +1,1045 @@
+body, html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main .intro {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .main .intro {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main .intro {
+    animation: intro 4s linear forwards;
+  }
+}
+.main .intro .introBox {
+  width: 855px;
+  height: 118px;
+  margin: 300px auto;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: introBox 2s 1s linear forwards;
+}
+.main .intro .introBox span {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 855px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  left: 0;
+  animation: spansIntro 4s linear forwards;
+}
+.main .intro .introBox span:nth-of-type(1) {
+  transform-origin: left;
+  transform: rotateY(90deg);
+}
+.main .intro .introBox span:nth-of-type(2) {
+  transform-origin: left;
+  transform: rotateY(90deg);
+  left: 100%;
+}
+.main .intro .introBox span:nth-of-type(3) {
+  transform: translateZ(-855px);
+}
+.main .headTop {
+  height: 100px;
+  z-index: 1000;
+  animation: main 5s linear forwards;
+}
+@media screen and (max-width: 992px) {
+  .main .headTop {
+    animation: none;
+  }
+}
+.main .headTop .menu {
+  height: 70%;
+  background-color: black;
+  border-radius: 40px;
+}
+.main .headTop .menu ul > li {
+  height: 80%;
+}
+.main .headTop .menu ul > li:nth-of-type(3) {
+  width: 20%;
+}
+.main .headTop .menu ul > li > a {
+  border-radius: 40px;
+  transition: 0.4s;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.main .headTop .menu ul > li > a:hover {
+  color: black;
+  background-color: #fff;
+}
+.main .headTop .emailSm {
+  height: 50px;
+}
+.main .headTop .emailSm > a {
+  width: 70%;
+  border-bottom: 2px solid #2f8ce9;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main .headTop .toggle {
+  height: 50px;
+  top: 5%;
+  right: 5%;
+}
+.main .headTop .toggle > span {
+  width: 50px;
+  font-size: 40px;
+  transform: scaleX(-1);
+  z-index: 1000;
+  cursor: pointer;
+}
+.main .headTop .toggle #subMenu {
+  display: flex;
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  top: -1000%;
+  left: 0;
+  transition: 1s;
+}
+.main .headTop .toggle #subMenu > li {
+  height: 15%;
+  margin: 10px 0;
+}
+.main .headTop .toggle #subMenu > li > a {
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: capitalize;
+  color: black;
+}
+.main .headTop .toggle #subMenu > li > a:hover {
+  color: rgb(116, 116, 34);
+}
+.main .about {
+  animation: main 5s linear forwards;
+  height: 170vh;
+}
+@media screen and (max-width: 992px) {
+  .main .about {
+    animation: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main .about {
+    height: 150vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main .about {
+    height: 200vh;
+  }
+}
+.main .about .slideTop {
+  height: 70px;
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .main .about .slideTop {
+    width: 70%;
+  }
+}
+.main .about .slideTop span {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 20px;
+  left: 0;
+}
+@media screen and (max-width: 576px) {
+  .main .about .slideTop span {
+    font-size: 15px;
+  }
+}
+.main .about .slideTop span:nth-of-type(1) {
+  top: 0;
+  animation: slideTop1 3s linear infinite;
+}
+.main .about .slideTop span:nth-of-type(2) {
+  top: 100%;
+  animation: slideTop2 3s linear infinite;
+}
+.main .about .name {
+  text-transform: uppercase;
+  color: black;
+  font-size: 200%;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  transform: scaleY(1.2);
+}
+@media screen and (min-width: 768px) {
+  .main .about .name {
+    font-size: 60px;
+  }
+}
+.main .about .emailTop {
+  height: 50px;
+  margin-top: 200px;
+  padding-right: 0;
+}
+.main .about .emailTop > a {
+  border-bottom: 2px solid #2f8ce9;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main .about .pic {
+  height: 50%;
+}
+@media screen and (max-width: 576px) {
+  .main .about .pic {
+    height: 25%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .main .about .pic {
+    height: 40%;
+  }
+}
+.main .about .pic:hover > img {
+  border-radius: 100px;
+  visibility: hidden;
+  opacity: 0;
+}
+.main .about .pic:hover .sliderPics {
+  visibility: visible;
+  opacity: 1;
+}
+.main .about .pic > img {
+  border-radius: 50%;
+  transition: 0.4s;
+  visibility: visible;
+  z-index: 10;
+  opacity: 1;
+}
+@media screen and (max-width: 576px) {
+  .main .about .pic > img {
+    border-radius: 20%;
+  }
+}
+.main .about .pic .sliderPics {
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+.main .about .pic .sliderPics figure {
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.main .about .pic .sliderPics figure > img {
+  border-radius: 100px;
+}
+.main .about .pic .sliderPics figure:nth-of-type(1) {
+  animation-name: pic1;
+}
+.main .about .pic .sliderPics figure:nth-of-type(2) {
+  animation-name: pic2;
+}
+.main .about .pic .sliderPics figure:nth-of-type(3) {
+  animation-name: pic3;
+}
+.main .about .socialTop {
+  height: 50px;
+  margin-top: 200px;
+}
+.main .about .socialTop > a {
+  width: 30%;
+  height: 100%;
+  color: black;
+}
+.main .about .socialTop > a > i {
+  font-size: 30px;
+}
+.main .about .aboutme {
+  height: 350px;
+}
+.main .about .aboutme > h2 {
+  text-transform: uppercase;
+  padding: 0% 10%;
+  font-size: 50px;
+}
+@media screen and (max-width: 425px) {
+  .main .about .aboutme > h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .about .aboutme > h2 {
+    padding: 0 2%;
+  }
+}
+.main .about .aboutme > p {
+  padding: 0% 10%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+@media screen and (max-width: 425px) {
+  .main .about .aboutme > p {
+    font-size: 16px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .main .about .aboutme > p {
+    font-size: 20px;
+    padding: 0 2%;
+  }
+}
+.main .works {
+  height: auto;
+  animation: main 5s linear forwards;
+}
+@media screen and (max-width: 992px) {
+  .main .works {
+    animation: none;
+  }
+}
+.main .works h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  height: 100vh;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 992px) {
+  .main .works h2 {
+    height: 200px;
+  }
+}
+.main .works .backgroundWork {
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.main .works .backgroundWork > figure {
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  top: 0;
+  opacity: 0;
+}
+.main .works .backgroundWork > figure:nth-of-type(1) {
+  opacity: 1;
+  animation-name: slideBg1;
+  background-image: linear-gradient(to bottom, white, rgb(252, 211, 230));
+}
+.main .works .backgroundWork > figure:nth-of-type(2) {
+  background-image: linear-gradient(to bottom, white, rgb(255, 201, 201));
+  animation-name: slideBg2;
+}
+.main .works .backgroundWork > figure:nth-of-type(3) {
+  animation-name: slideBg3;
+  background-image: linear-gradient(to bottom, white, #b5f1fc);
+}
+.main .works .backgroundWork > figure:nth-of-type(4) {
+  animation-name: slideBg4;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-image: linear-gradient(to bottom, white, #c5b0d3);
+}
+.main .works .backgroundWork > figure:nth-of-type(5) {
+  animation-name: slideBg5;
+  background-image: linear-gradient(to bottom, white, rgb(133, 133, 133));
+}
+.main .works .sliderWorks {
+  height: 450px;
+  z-index: 10;
+}
+@media screen and (max-width: 576px) {
+  .main .works .sliderWorks {
+    height: 400px;
+  }
+}
+.main .works .sliderWorks > img {
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  top: 100%;
+}
+.main .works .sliderWorks > img:nth-of-type(1) {
+  top: 0;
+  animation-name: slideImg1;
+}
+.main .works .sliderWorks > img:nth-of-type(2) {
+  animation-name: slideImg2;
+}
+.main .works .sliderWorks > img:nth-of-type(3) {
+  animation-name: slideImg3;
+}
+.main .works .sliderWorks > img:nth-of-type(4) {
+  animation-name: slideImg4;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.main .works .sliderWorks > img:nth-of-type(5) {
+  animation-name: slideImg5;
+}
+.main .works .projectNameSlider {
+  height: 450px;
+  z-index: 10;
+}
+@media screen and (max-width: 992px) {
+  .main .works .projectNameSlider {
+    height: 200px;
+  }
+}
+.main .works .projectNameSlider > div {
+  position: absolute;
+  height: 100%;
+  border-radius: 50px;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  top: 100%;
+}
+.main .works .projectNameSlider > div:nth-of-type(1) {
+  top: 0;
+  animation-name: slideImg1;
+}
+.main .works .projectNameSlider > div:nth-of-type(1) > div {
+  background-color: hotpink;
+}
+.main .works .projectNameSlider > div:nth-of-type(2) {
+  animation-name: slideImg2;
+}
+.main .works .projectNameSlider > div:nth-of-type(2) > div {
+  background-color: red;
+}
+.main .works .projectNameSlider > div:nth-of-type(3) {
+  animation-name: slideImg3;
+}
+.main .works .projectNameSlider > div:nth-of-type(3) > div {
+  background-color: #69c1d1;
+}
+.main .works .projectNameSlider > div:nth-of-type(4) {
+  animation-name: slideImg4;
+}
+.main .works .projectNameSlider > div:nth-of-type(4) > div {
+  background-color: #683f86;
+}
+.main .works .projectNameSlider > div:nth-of-type(5) {
+  animation-name: slideImg5;
+}
+.main .works .projectNameSlider > div:nth-of-type(5) > div {
+  background-color: black;
+}
+.main .works .projectNameSlider > div > h3 {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+}
+@media screen and (max-width: 425px) {
+  .main .works .projectNameSlider > div > h3 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main .works .projectNameSlider > div > h3 {
+    text-align: center;
+  }
+}
+.main .works .projectNameSlider > div > p {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 992px) {
+  .main .works .projectNameSlider > div > p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+.main .works .projectNameSlider > div > div {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+}
+.main .works .projectNameSlider > div > div > a {
+  width: 70%;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+.main .works .projectNameSlider > div > div > span {
+  color: white;
+  transform: rotate(-90deg);
+  width: 20%;
+}
+.main .education {
+  animation: main 5s linear forwards;
+  height: 80vh;
+}
+@media screen and (max-width: 992px) {
+  .main .education {
+    animation: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main .education {
+    height: 100vh;
+  }
+}
+.main .education h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  height: 450px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 992px) {
+  .main .education h2 {
+    height: 200px;
+  }
+}
+.main .education .educationBox {
+  height: 225px;
+  border-radius: 70px;
+  background-image: linear-gradient(to right, white, #e0e6fc);
+}
+.main .education .educationBox > * {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+}
+.main .education .educationBox > span {
+  font-weight: bold;
+  height: 10%;
+  color: rgb(152, 152, 152);
+  font-size: 20px;
+}
+@media screen and (max-width: 576px) {
+  .main .education .educationBox > span {
+    font-size: 16px;
+  }
+}
+.main .education .educationBox > h3 {
+  font-size: 35px;
+  font-weight: bold;
+  height: 30%;
+}
+@media screen and (max-width: 576px) {
+  .main .education .educationBox > h3 {
+    font-size: 26px;
+  }
+}
+.main .education .educationBox > h4 {
+  font-weight: bold;
+  height: 15%;
+}
+@media screen and (max-width: 576px) {
+  .main .education .educationBox > h4 {
+    font-size: 20px;
+  }
+}
+.main .skill {
+  height: auto;
+  animation: main 5s linear forwards;
+}
+@media screen and (max-width: 992px) {
+  .main .skill {
+    animation: none;
+  }
+}
+.main .skill h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  height: 200px;
+  text-transform: capitalize;
+}
+.main .skill .skillsBox > h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  height: 100px;
+  text-transform: capitalize;
+}
+.main .skill .skillsBox > div {
+  height: 100px;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+.main .skill .skillsBox > div:nth-of-type(1), .main .skill .skillsBox > div:nth-of-type(2), .main .skill .skillsBox > div:nth-of-type(3) {
+  background-color: #f2f3ff;
+}
+.main .skill .skillsBox > div:nth-of-type(1) > span, .main .skill .skillsBox > div:nth-of-type(2) > span, .main .skill .skillsBox > div:nth-of-type(3) > span {
+  background-image: linear-gradient(to right, #eff0ff, #e2e4ff);
+}
+.main .skill .skillsBox > div:nth-of-type(4), .main .skill .skillsBox > div:nth-of-type(5) {
+  background-color: #eaf5ff;
+}
+.main .skill .skillsBox > div:nth-of-type(4) > span, .main .skill .skillsBox > div:nth-of-type(5) > span {
+  background-image: linear-gradient(to right, #ebf5ff, #cfe7ff);
+}
+.main .skill .skillsBox > div:nth-of-type(6), .main .skill .skillsBox > div:nth-of-type(7) {
+  background-color: #fff2e6;
+}
+.main .skill .skillsBox > div:nth-of-type(6) > span, .main .skill .skillsBox > div:nth-of-type(7) > span {
+  background-image: linear-gradient(to right, #feefe5, #fde3d0);
+}
+.main .skill .skillsBox > div > h3 {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 0 5%;
+  color: black;
+  z-index: 10;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .skill .skillsBox > div > span {
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .skill .skillsBox > div:nth-of-type(1) > span {
+  width: 98%;
+}
+.main .skill .skillsBox > div:nth-of-type(2) > span, .main .skill .skillsBox > div:nth-of-type(3) > span {
+  width: 95%;
+}
+.main .skill .skillsBox > div:nth-of-type(4) > span {
+  width: 85%;
+}
+.main .skill .skillsBox > div:nth-of-type(5) > span {
+  width: 80%;
+}
+.main .skill .skillsBox > div:nth-of-type(6) > span {
+  width: 75%;
+}
+.main .skill .skillsBox > div:nth-of-type(7) > span {
+  width: 70%;
+}
+.main .skill .skillsBox .viewBox {
+  height: 100px;
+  border-radius: 50px;
+  z-index: 10;
+  cursor: pointer;
+  background-color: rgb(249, 203, 211);
+}
+.main .skill .skillsBox .viewBox > * {
+  position: absolute;
+  top: 0;
+}
+.main .skill .skillsBox .viewBox > h3 {
+  left: 0;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 0 5%;
+  color: black;
+  font-weight: bold;
+}
+.main .skill .skillsBox .viewBox > span {
+  left: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.main .skill .skillsBox .viewProjects {
+  height: 0px;
+  transition: 5s;
+}
+.main .skill .skillsBox .viewProjects .projects {
+  height: auto;
+  top: -1600px;
+  transition: 5s;
+}
+.main .skill .skillsBox .viewProjects .projects > figure {
+  height: 200px;
+  width: 100%;
+  margin: 10px 0;
+}
+.main .skill .skillsBox .viewProjects .projects > figure > * {
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+}
+.main .skill .skillsBox .viewProjects .projects > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .main .skill .skillsBox .viewProjects .projects > figure:nth-of-type(2) > img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main .skill .skillsBox .viewProjects .projects > figure > img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+.main .skill .skillsBox .viewProjects .projects > figure:nth-of-type(6) > img, .main .skill .skillsBox .viewProjects .projects > figure:nth-of-type(5) > img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.main .skill .skillsBox .viewProjects .projects > figure:hover > figcaption {
+  opacity: 1;
+}
+.main .skill .skillsBox .viewProjects .projects > figure > figcaption {
+  opacity: 0;
+  transition: 0.4s;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+.main .skill .skillsBox .viewProjects .projects > figure > figcaption > a {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-transform: capitalize;
+  font-size: 50px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .main .skill .skillsBox .viewProjects .projects > figure > figcaption > a {
+    font-size: 40px;
+  }
+}
+.main .laptop {
+  animation: main 5s linear forwards;
+  height: 60vh;
+}
+@media screen and (max-width: 992px) {
+  .main .laptop {
+    animation: none;
+  }
+}
+.main .laptop figure {
+  background-image: url(../img/lap.jpg);
+  background-position: 10% 10%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main .contact {
+  animation: main 5s linear forwards;
+  height: auto;
+}
+@media screen and (max-width: 992px) {
+  .main .contact {
+    animation: none;
+  }
+}
+.main .contact h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 992px) {
+  .main .contact h2 {
+    height: 100px;
+  }
+}
+.main .contact .socialContact {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main .contact .socialContact > a {
+  height: 100px;
+  width: 600px;
+  font-size: 26px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #7c65c2, white);
+  border: 3px solid #bdb1e1;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+@media screen and (max-width: 425px) {
+  .main .contact .socialContact > a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 992px) {
+  .main .contact .socialContact > a {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+.main .contact .socialContact > div {
+  height: 70%;
+}
+.main .contact .socialContact > div > a {
+  width: 30%;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 992px) {
+  .main .contact .socialContact > div > a {
+    width: 52%;
+  }
+}
+
+@keyframes slideBg1 {
+  0%, 10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideBg2 {
+  10% {
+    opacity: 0;
+  }
+  20%, 30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slideBg3 {
+  30% {
+    opacity: 0;
+  }
+  40%, 50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slideBg4 {
+  50% {
+    opacity: 0;
+  }
+  60%, 70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slideBg5 {
+  70% {
+    opacity: 0;
+  }
+  80%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slideImg1 {
+  0%, 10% {
+    top: 0;
+  }
+  20% {
+    top: -100%;
+  }
+  20.000001%, 90% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes slideImg2 {
+  10% {
+    top: 100%;
+  }
+  20%, 30% {
+    top: 0;
+  }
+  40% {
+    top: -100%;
+  }
+  40.000001%, 100% {
+    top: 100%;
+  }
+}
+@keyframes slideImg3 {
+  30% {
+    top: 100%;
+  }
+  40%, 50% {
+    top: 0;
+  }
+  60% {
+    top: -100%;
+  }
+  60.000001%, 100% {
+    top: 100%;
+  }
+}
+@keyframes slideImg4 {
+  50% {
+    top: 100%;
+  }
+  60%, 70% {
+    top: 0;
+  }
+  80% {
+    top: -100%;
+  }
+  80.000001%, 100% {
+    top: 100%;
+  }
+}
+@keyframes slideImg5 {
+  70% {
+    top: 100%;
+  }
+  80%, 90% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+@keyframes pic1 {
+  0%, 30%, 100% {
+    visibility: visible;
+  }
+  36%, 94% {
+    visibility: hidden;
+  }
+}
+@keyframes pic2 {
+  0%, 30%, 66%, 100% {
+    visibility: hidden;
+  }
+  36%, 63% {
+    visibility: visible;
+  }
+}
+@keyframes pic3 {
+  0%, 63%, 100% {
+    visibility: hidden;
+  }
+  69%, 94% {
+    visibility: visible;
+  }
+}
+@keyframes slideTop1 {
+  0%, 44% {
+    top: 0;
+  }
+  50% {
+    top: -100%;
+  }
+  50.0001%, 94% {
+    top: 100%;
+  }
+}
+@keyframes slideTop2 {
+  0%, 44% {
+    top: 100%;
+  }
+  50%, 94% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+@keyframes spansIntro {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+}
+@keyframes introBox {
+  to {
+    transform: rotateY(45deg) rotateX(10deg) rotateZ(10deg) translateX(50%) translateY(-100%);
+  }
+}
+@keyframes intro {
+  0%, 80% {
+    display: flex;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes main {
+  0%, 80% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=master.css.map */
